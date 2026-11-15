@@ -1,0 +1,27 @@
+{
+  "name": "examnest",
+  "version": "1.0.0",
+  "description": "Exam updates aggregator with practice questions and mock tests. Auto-updates from official sources.",
+  "scripts": {
+    "update": "node scripts/update.mjs",
+    "build": "node scripts/build.mjs",
+    "serve": "npx http-server dist -p 8080",
+    "refresh": "node scripts/update.mjs && node scripts/build.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdali-git/sdali-git.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sdali-git/sdali-git/issues"
+  },
+  "homepage": "https://github.com/sdali-git/sdali-git#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0"
+  },
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  }
+}

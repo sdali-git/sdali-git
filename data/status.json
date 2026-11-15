@@ -1,0 +1,84 @@
+{
+  "lastRun": "2026-11-15T02:41:51.617Z",
+  "sources": {
+    "ibps": {
+      "ok": true,
+      "found": 19,
+      "added": 0,
+      "ms": 5530
+    },
+    "sbi": {
+      "ok": true,
+      "found": 236,
+      "added": 34,
+      "ms": 12713
+    },
+    "rbi": {
+      "ok": true,
+      "found": 0,
+      "added": 0,
+      "ms": 8476
+    },
+    "ssc": {
+      "ok": true,
+      "found": 10,
+      "added": 0,
+      "ms": 9553
+    },
+    "rrb": {
+      "ok": false,
+      "error": "HTTP 503",
+      "ms": 67146
+    },
+    "upsc": {
+      "ok": false,
+      "error": "HTTP 503",
+      "ms": 67180
+    },
+    "upsc-active": {
+      "ok": false,
+      "error": "HTTP 503",
+      "ms": 57188
+    },
+    "ctet": {
+      "ok": true,
+      "found": 22,
+      "added": 5,
+      "ms": 4225
+    },
+    "nta": {
+      "ok": true,
+      "found": 797,
+      "added": 662,
+      "ms": 3329
+    },
+    "ugcnet": {
+      "ok": true,
+      "found": 25,
+      "added": 1,
+      "ms": 1668
+    },
+    "jeemain": {
+      "ok": false,
+      "error": "HTTP 403",
+      "ms": 12922
+    },
+    "neet": {
+      "ok": false,
+      "error": "HTTP 403",
+      "ms": 12839
+    },
+    "cuet": {
+      "ok": true,
+      "found": 19,
+      "added": 1,
+      "ms": 4274
+    },
+    "cat": {
+      "ok": true,
+      "found": 24,
+      "added": 0,
+      "ms": 11325
+    }
+  }
+}

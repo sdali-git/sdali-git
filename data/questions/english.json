@@ -1,0 +1,266 @@
+{
+  "subject": "english",
+  "name": "English Language",
+  "questions": [
+    {
+      "id": "english-001",
+      "topic": "Synonyms",
+      "q": "Choose the word closest in meaning to ABUNDANT.",
+      "options": [
+        "Scarce",
+        "Plentiful",
+        "Rare",
+        "Tiny"
+      ],
+      "answer": 1,
+      "explanation": "Abundant means existing in large quantities, which is plentiful."
+    },
+    {
+      "id": "english-002",
+      "topic": "Antonyms",
+      "q": "Choose the word opposite in meaning to ANCIENT.",
+      "options": [
+        "Old",
+        "Antique",
+        "Modern",
+        "Historic"
+      ],
+      "answer": 2,
+      "explanation": "Ancient means very old. Its opposite is modern."
+    },
+    {
+      "id": "english-003",
+      "topic": "Error Spotting",
+      "q": "Find the error: \"He don't like coffee in the morning.\"",
+      "options": [
+        "He",
+        "don't",
+        "like coffee",
+        "in the morning"
+      ],
+      "answer": 1,
+      "explanation": "A third-person singular subject takes 'doesn't': He doesn't like coffee."
+    },
+    {
+      "id": "english-004",
+      "topic": "Fill in the Blanks",
+      "q": "She has been working here ___ 2019.",
+      "options": [
+        "for",
+        "since",
+        "from",
+        "by"
+      ],
+      "answer": 1,
+      "explanation": "'Since' marks a point in time. 'For' marks a length of time."
+    },
+    {
+      "id": "english-005",
+      "topic": "One-word Substitution",
+      "q": "A person who can speak many languages is called a:",
+      "options": [
+        "Linguist",
+        "Polyglot",
+        "Translator",
+        "Bilingual"
+      ],
+      "answer": 1,
+      "explanation": "A polyglot knows and uses several languages."
+    },
+    {
+      "id": "english-006",
+      "topic": "Idioms",
+      "q": "What does the idiom \"break the ice\" mean?",
+      "options": [
+        "To start a conversation in an awkward situation",
+        "To break something fragile",
+        "To end a friendship",
+        "To cool down a drink"
+      ],
+      "answer": 0,
+      "explanation": "To break the ice is to do or say something that relieves tension and gets people talking."
+    },
+    {
+      "id": "english-007",
+      "topic": "Spelling",
+      "q": "Choose the correctly spelt word.",
+      "options": [
+        "Acommodation",
+        "Accomodation",
+        "Accommodation",
+        "Acomodation"
+      ],
+      "answer": 2,
+      "explanation": "The correct spelling has a double 'c' and a double 'm': accommodation."
+    },
+    {
+      "id": "english-008",
+      "topic": "Voice",
+      "q": "Change to passive voice: \"They are building a bridge.\"",
+      "options": [
+        "A bridge is built by them.",
+        "A bridge was being built by them.",
+        "A bridge is being built by them.",
+        "A bridge has been built by them."
+      ],
+      "answer": 2,
+      "explanation": "Present continuous passive is is/are + being + past participle: A bridge is being built by them."
+    },
+    {
+      "id": "english-009",
+      "topic": "Synonyms",
+      "q": "Choose the word closest in meaning to CANDID.",
+      "options": [
+        "Frank",
+        "Secretive",
+        "Shy",
+        "Clever"
+      ],
+      "answer": 0,
+      "explanation": "Candid means truthful and straightforward, which is frank."
+    },
+    {
+      "id": "english-010",
+      "topic": "Antonyms",
+      "q": "Choose the word opposite in meaning to EXPAND.",
+      "options": [
+        "Enlarge",
+        "Contract",
+        "Spread",
+        "Extend"
+      ],
+      "answer": 1,
+      "explanation": "To expand is to become larger. Its opposite is to contract."
+    },
+    {
+      "id": "english-011",
+      "topic": "Subject-Verb Agreement",
+      "q": "Neither the teacher nor the students ___ present.",
+      "options": [
+        "was",
+        "were",
+        "is",
+        "has been"
+      ],
+      "answer": 1,
+      "explanation": "With 'neither … nor', the verb agrees with the nearer subject. 'Students' is plural, so 'were'."
+    },
+    {
+      "id": "english-012",
+      "topic": "Idioms",
+      "q": "What does \"a piece of cake\" mean?",
+      "options": [
+        "Something very easy",
+        "A small reward",
+        "A celebration",
+        "Something delicious"
+      ],
+      "answer": 0,
+      "explanation": "A piece of cake is something very easy to do."
+    },
+    {
+      "id": "english-013",
+      "topic": "One-word Substitution",
+      "q": "An extreme fear of heights is called:",
+      "options": [
+        "Claustrophobia",
+        "Hydrophobia",
+        "Acrophobia",
+        "Agoraphobia"
+      ],
+      "answer": 2,
+      "explanation": "Acrophobia is fear of heights. Claustrophobia is fear of closed spaces and hydrophobia is fear of water."
+    },
+    {
+      "id": "english-014",
+      "topic": "Articles",
+      "q": "He is ___ honest man.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article"
+      ],
+      "answer": 1,
+      "explanation": "'Honest' begins with a vowel sound (the 'h' is silent), so 'an'."
+    },
+    {
+      "id": "english-015",
+      "topic": "Prepositions",
+      "q": "She is good ___ mathematics.",
+      "options": [
+        "in",
+        "at",
+        "on",
+        "with"
+      ],
+      "answer": 1,
+      "explanation": "The usual expression is 'good at' a subject or skill."
+    },
+    {
+      "id": "english-016",
+      "topic": "Narration",
+      "q": "Change to indirect speech: He said, \"I am tired.\"",
+      "options": [
+        "He said that he is tired.",
+        "He said that he was tired.",
+        "He said that I was tired.",
+        "He told that he is tired."
+      ],
+      "answer": 1,
+      "explanation": "With a past reporting verb, 'am' becomes 'was' and 'I' becomes 'he'."
+    },
+    {
+      "id": "english-017",
+      "topic": "Synonyms",
+      "q": "Choose the word closest in meaning to BENEVOLENT.",
+      "options": [
+        "Cruel",
+        "Kind",
+        "Greedy",
+        "Lazy"
+      ],
+      "answer": 1,
+      "explanation": "Benevolent means well-meaning and kindly."
+    },
+    {
+      "id": "english-018",
+      "topic": "Antonyms",
+      "q": "Choose the word opposite in meaning to OPTIMISTIC.",
+      "options": [
+        "Hopeful",
+        "Cheerful",
+        "Pessimistic",
+        "Confident"
+      ],
+      "answer": 2,
+      "explanation": "An optimist expects good outcomes and a pessimist expects bad ones."
+    },
+    {
+      "id": "english-019",
+      "topic": "One-word Substitution",
+      "q": "A list of items to be discussed at a meeting is called the:",
+      "options": [
+        "Minutes",
+        "Agenda",
+        "Memo",
+        "Itinerary"
+      ],
+      "answer": 1,
+      "explanation": "The agenda lists the business of a meeting. The minutes record what happened at it."
+    },
+    {
+      "id": "english-020",
+      "topic": "Sentence Correction",
+      "q": "Choose the grammatically correct sentence.",
+      "options": [
+        "If I was you, I would apologise.",
+        "If I were you, I would apologise.",
+        "If I am you, I will apologise.",
+        "If I were you, I will apologise."
+      ],
+      "answer": 1,
+      "explanation": "Hypothetical conditions use the subjunctive 'were' with 'would'."
+    }
+  ]
+}

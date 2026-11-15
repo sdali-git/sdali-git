@@ -1,0 +1,19 @@
+{
+  "name": "ExamNest",
+  "tagline": "Latest exam notifications, previous year papers and free practice tests",
+  "description": "Free exam updates pulled from official sources, previous year paper links, practice questions with explanations and timed mock tests for banking, SSC, railways, UPSC, teaching and entrance exams.",
+  "baseUrl": "https://example.com",
+  "basePath": "/",
+  "timezone": "Asia/Kolkata",
+  "updateSchedule": "Monday, Wednesday and Friday at 1:00 AM IST",
+  "theme": {
+    "primary": "#0f766e",
+    "primaryStrong": "#115e59",
+    "primarySoft": "#ccfbf1",
+    "accent": "#f59e0b",
+    "darkPrimary": "#2dd4bf",
+    "darkPrimarySoft": "#134e4a"
+  },
+  "keepDays": 180,
+  "maxItems": 2000
+}

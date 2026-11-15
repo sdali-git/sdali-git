@@ -1,0 +1,20 @@
+{
+  "_comment": "Official public pages the updater reads. mode: html = plain fetch, browser = rendered in headless Chromium (for JavaScript-only sites), rss = RSS/Atom feed. Add a source here and reference its id from an exam's \"sources\" list in exams.json.",
+  "sources": [
+    { "id": "ibps", "name": "IBPS", "category": "banking", "mode": "html", "url": "https://www.ibps.in/" },
+    { "id": "sbi", "name": "SBI Careers", "category": "banking", "mode": "browser", "url": "https://sbi.co.in/web/careers/current-openings" },
+    { "id": "rbi", "name": "RBI Opportunities", "category": "banking", "mode": "browser", "url": "https://opportunities.rbi.org.in/Scripts/Vacancies.aspx" },
+    { "id": "ssc", "name": "Staff Selection Commission", "category": "ssc", "mode": "browser", "url": "https://ssc.gov.in/home/notice-board",
+      "rows": { "row": ".innerCardHead", "title": ".rightSection .text", "date": ".dateBox" } },
+    { "id": "rrb", "name": "RRB Chandigarh", "category": "railways", "mode": "html", "url": "https://www.rrbcdg.gov.in/" },
+    { "id": "upsc", "name": "UPSC What's New", "category": "upsc", "mode": "html", "url": "https://upsc.gov.in/whats-new" },
+    { "id": "upsc-active", "name": "UPSC Active Examinations", "category": "upsc", "mode": "html", "url": "https://upsc.gov.in/examinations/active-exams", "alias": "upsc" },
+    { "id": "ctet", "name": "CTET (CBSE)", "category": "teaching", "mode": "html", "url": "https://ctet.nic.in/" },
+    { "id": "nta", "name": "National Testing Agency", "category": "entrance", "mode": "html", "url": "https://nta.ac.in/" },
+    { "id": "ugcnet", "name": "UGC NET (NTA)", "category": "teaching", "mode": "html", "url": "https://ugcnet.nta.ac.in/" },
+    { "id": "jeemain", "name": "JEE Main (NTA)", "category": "entrance", "mode": "html", "url": "https://jeemain.nta.nic.in/" },
+    { "id": "neet", "name": "NEET UG (NTA)", "category": "entrance", "mode": "html", "url": "https://neet.nta.nic.in/" },
+    { "id": "cuet", "name": "CUET UG (NTA)", "category": "entrance", "mode": "html", "url": "https://cuet.nta.nic.in/" },
+    { "id": "cat", "name": "CAT (IIMs)", "category": "entrance", "mode": "browser", "url": "https://iimcat.ac.in/" }
+  ]
+}

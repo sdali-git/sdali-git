@@ -1,0 +1,273 @@
+{
+  "categories": [
+    { "slug": "banking", "name": "Banking & Insurance", "icon": "🏦", "blurb": "Public sector bank, RBI, NABARD and insurance recruitment." },
+    { "slug": "ssc", "name": "SSC", "icon": "🏛️", "blurb": "Staff Selection Commission exams for central government posts." },
+    { "slug": "railways", "name": "Railways", "icon": "🚆", "blurb": "Railway Recruitment Board exams for technical and non-technical posts." },
+    { "slug": "upsc", "name": "UPSC & Defence", "icon": "🎖️", "blurb": "Civil services, engineering services and defence entry exams." },
+    { "slug": "teaching", "name": "Teaching", "icon": "📚", "blurb": "Teacher eligibility tests and lecturer / research fellowship exams." },
+    { "slug": "entrance", "name": "Entrance Exams", "icon": "🎓", "blurb": "Undergraduate and postgraduate admission tests." }
+  ],
+  "exams": [
+    {
+      "slug": "ibps-po", "name": "IBPS PO", "full": "IBPS Probationary Officer / Management Trainee", "category": "banking",
+      "body": "Institute of Banking Personnel Selection", "officialUrl": "https://www.ibps.in/",
+      "about": "Common recruitment process for officer-level entry into participating public sector banks.",
+      "stages": ["Preliminary (online objective)", "Mains (online objective + descriptive)", "Interview"],
+      "subjects": ["quant", "reasoning", "english", "awareness"],
+      "match": ["CRP[- ]?PO", "Probationary Officer", "PO/MT"], "sources": ["ibps"]
+    },
+    {
+      "slug": "ibps-clerk", "name": "IBPS Clerk", "full": "IBPS Customer Service Associate (Clerical Cadre)", "category": "banking",
+      "body": "Institute of Banking Personnel Selection", "officialUrl": "https://www.ibps.in/",
+      "about": "Common recruitment process for clerical cadre posts in participating public sector banks.",
+      "stages": ["Preliminary (online objective)", "Mains (online objective)"],
+      "subjects": ["quant", "reasoning", "english", "awareness"],
+      "match": ["CRP[- ]?CSA", "Clerk", "Customer Service Associate", "Clerical"], "sources": ["ibps"]
+    },
+    {
+      "slug": "ibps-rrb", "name": "IBPS RRB", "full": "IBPS Regional Rural Banks (Officer Scale & Office Assistant)", "category": "banking",
+      "body": "Institute of Banking Personnel Selection", "officialUrl": "https://www.ibps.in/",
+      "about": "Recruitment of officers and office assistants for Regional Rural Banks across India.",
+      "stages": ["Preliminary", "Mains", "Interview (officers only)"],
+      "subjects": ["quant", "reasoning", "english", "awareness"],
+      "match": ["RRB", "Regional Rural Bank", "Office Assistant"], "sources": ["ibps"]
+    },
+    {
+      "slug": "ibps-so", "name": "IBPS SO", "full": "IBPS Specialist Officer", "category": "banking",
+      "body": "Institute of Banking Personnel Selection", "officialUrl": "https://www.ibps.in/",
+      "about": "Recruitment of specialist officers (IT, Agriculture, Law, HR, Marketing and more) in public sector banks.",
+      "stages": ["Preliminary", "Mains (professional knowledge)", "Interview"],
+      "subjects": ["reasoning", "english", "quant"],
+      "match": ["CRP[- ]?SPL", "Specialist Officer"], "sources": ["ibps"]
+    },
+    {
+      "slug": "sbi-po", "name": "SBI PO", "full": "State Bank of India Probationary Officer", "category": "banking",
+      "body": "State Bank of India", "officialUrl": "https://sbi.co.in/web/careers",
+      "about": "Officer recruitment conducted by the State Bank of India for its own branches.",
+      "stages": ["Preliminary", "Mains", "Psychometric test, group exercise & interview"],
+      "subjects": ["quant", "reasoning", "english", "awareness"],
+      "match": ["Probationary Officer", "\\bPO\\b"], "sources": ["sbi"]
+    },
+    {
+      "slug": "sbi-clerk", "name": "SBI Clerk", "full": "SBI Junior Associate (Customer Support & Sales)", "category": "banking",
+      "body": "State Bank of India", "officialUrl": "https://sbi.co.in/web/careers",
+      "about": "Recruitment of junior associates for State Bank of India branches.",
+      "stages": ["Preliminary", "Mains", "Local language test"],
+      "subjects": ["quant", "reasoning", "english", "awareness"],
+      "match": ["Junior Associate", "Clerical"], "sources": ["sbi"]
+    },
+    {
+      "slug": "rbi-grade-b", "name": "RBI Grade B", "full": "Reserve Bank of India Officers in Grade 'B'", "category": "banking",
+      "body": "Reserve Bank of India", "officialUrl": "https://opportunities.rbi.org.in/",
+      "about": "Direct recruitment of officers in Grade B (General, DEPR and DSIM streams) at the Reserve Bank of India.",
+      "stages": ["Phase I (objective)", "Phase II (economic & social issues, finance & management, English)", "Interview"],
+      "subjects": ["quant", "reasoning", "english", "awareness"],
+      "match": ["Grade ['‘’]?B['‘’]?", "Grade B"], "sources": ["rbi"]
+    },
+    {
+      "slug": "rbi-assistant", "name": "RBI Assistant", "full": "Reserve Bank of India Assistant", "category": "banking",
+      "body": "Reserve Bank of India", "officialUrl": "https://opportunities.rbi.org.in/",
+      "about": "Recruitment of assistants in offices of the Reserve Bank of India.",
+      "stages": ["Preliminary", "Mains", "Language proficiency test"],
+      "subjects": ["quant", "reasoning", "english", "awareness"],
+      "match": ["\\bAssistant\\b", "Office Attendant"], "sources": ["rbi"]
+    },
+    {
+      "slug": "ssc-cgl", "name": "SSC CGL", "full": "Combined Graduate Level Examination", "category": "ssc",
+      "body": "Staff Selection Commission", "officialUrl": "https://ssc.gov.in/",
+      "about": "Recruitment of graduates to Group B and Group C posts in central ministries, departments and organisations.",
+      "stages": ["Tier 1 (computer based)", "Tier 2 (computer based)"],
+      "subjects": ["quant", "reasoning", "english", "awareness"],
+      "match": ["\\bCGL\\b", "Combined Graduate Level"], "sources": ["ssc"]
+    },
+    {
+      "slug": "ssc-chsl", "name": "SSC CHSL", "full": "Combined Higher Secondary (10+2) Level Examination", "category": "ssc",
+      "body": "Staff Selection Commission", "officialUrl": "https://ssc.gov.in/",
+      "about": "Recruitment of 12th-pass candidates to posts such as LDC/JSA, PA/SA and DEO.",
+      "stages": ["Tier 1 (computer based)", "Tier 2 (computer based + skill test)"],
+      "subjects": ["quant", "reasoning", "english", "awareness"],
+      "match": ["\\bCHSL\\b", "Higher Secondary"], "sources": ["ssc"]
+    },
+    {
+      "slug": "ssc-mts", "name": "SSC MTS", "full": "Multi-Tasking (Non-Technical) Staff and Havaldar", "category": "ssc",
+      "body": "Staff Selection Commission", "officialUrl": "https://ssc.gov.in/",
+      "about": "Recruitment of Multi-Tasking Staff and Havaldar (CBIC & CBN) for 10th-pass candidates.",
+      "stages": ["Computer based exam", "Physical efficiency/standard test (Havaldar)"],
+      "subjects": ["quant", "reasoning", "english", "awareness"],
+      "match": ["\\bMTS\\b", "Multi[- ]Tasking", "Havaldar"], "sources": ["ssc"]
+    },
+    {
+      "slug": "ssc-gd", "name": "SSC GD Constable", "full": "Constable (GD) in CAPFs, SSF, Assam Rifles and NCB", "category": "ssc",
+      "body": "Staff Selection Commission", "officialUrl": "https://ssc.gov.in/",
+      "about": "Recruitment of General Duty constables in Central Armed Police Forces and related organisations.",
+      "stages": ["Computer based exam", "PET/PST", "Medical examination"],
+      "subjects": ["quant", "reasoning", "english", "awareness"],
+      "match": ["\\bGD\\b", "Constable \\(?GD"], "sources": ["ssc"]
+    },
+    {
+      "slug": "ssc-cpo", "name": "SSC CPO", "full": "Sub-Inspector in Delhi Police and CAPFs", "category": "ssc",
+      "body": "Staff Selection Commission", "officialUrl": "https://ssc.gov.in/",
+      "about": "Recruitment of Sub-Inspectors in Delhi Police and Central Armed Police Forces.",
+      "stages": ["Paper 1", "PET/PST", "Paper 2", "Medical examination"],
+      "subjects": ["quant", "reasoning", "english", "awareness"],
+      "match": ["\\bCPO\\b", "Sub[- ]Inspector"], "sources": ["ssc"]
+    },
+    {
+      "slug": "ssc-je", "name": "SSC JE", "full": "Junior Engineer (Civil, Mechanical, Electrical)", "category": "ssc",
+      "body": "Staff Selection Commission", "officialUrl": "https://ssc.gov.in/",
+      "about": "Recruitment of junior engineers for central government departments.",
+      "stages": ["Paper 1 (computer based)", "Paper 2 (computer based)"],
+      "subjects": ["reasoning", "awareness"],
+      "match": ["Junior Engineer", "\\bJE\\b"], "sources": ["ssc"]
+    },
+    {
+      "slug": "ssc-steno", "name": "SSC Stenographer", "full": "Stenographer Grade 'C' & 'D'", "category": "ssc",
+      "body": "Staff Selection Commission", "officialUrl": "https://ssc.gov.in/",
+      "about": "Recruitment of stenographers for central government offices.",
+      "stages": ["Computer based exam", "Skill test in stenography"],
+      "subjects": ["reasoning", "english", "awareness"],
+      "match": ["Stenographer"], "sources": ["ssc"]
+    },
+    {
+      "slug": "rrb-ntpc", "name": "RRB NTPC", "full": "Non-Technical Popular Categories (Graduate & Undergraduate)", "category": "railways",
+      "body": "Railway Recruitment Boards", "officialUrl": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,7,1281",
+      "about": "Recruitment for posts such as clerks, station masters, goods guards and commercial apprentices in Indian Railways.",
+      "stages": ["CBT 1", "CBT 2", "Typing / aptitude test (post specific)", "Document verification"],
+      "subjects": ["quant", "reasoning", "awareness"],
+      "match": ["NTPC", "Non[- ]Technical Popular"], "sources": ["rrb"]
+    },
+    {
+      "slug": "rrb-group-d", "name": "RRB Group D", "full": "Level 1 posts in Indian Railways", "category": "railways",
+      "body": "Railway Recruitment Boards", "officialUrl": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,7,1281",
+      "about": "Recruitment of track maintainers, helpers and other Level 1 posts.",
+      "stages": ["Computer based test", "Physical efficiency test", "Document verification"],
+      "subjects": ["quant", "reasoning", "awareness"],
+      "match": ["Group[- ]?D", "Level[- ]?1", "CEN 0?8"], "sources": ["rrb"]
+    },
+    {
+      "slug": "rrb-alp", "name": "RRB ALP", "full": "Assistant Loco Pilot", "category": "railways",
+      "body": "Railway Recruitment Boards", "officialUrl": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,7,1281",
+      "about": "Recruitment of assistant loco pilots for Indian Railways.",
+      "stages": ["CBT 1", "CBT 2", "Computer based aptitude test", "Document verification"],
+      "subjects": ["quant", "reasoning", "awareness"],
+      "match": ["\\bALP\\b", "Loco Pilot"], "sources": ["rrb"]
+    },
+    {
+      "slug": "rrb-je", "name": "RRB JE", "full": "Junior Engineer, DMS and CMA", "category": "railways",
+      "body": "Railway Recruitment Boards", "officialUrl": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,7,1281",
+      "about": "Recruitment of junior engineers, depot material superintendents and chemical & metallurgical assistants.",
+      "stages": ["CBT 1", "CBT 2", "Document verification"],
+      "subjects": ["quant", "reasoning", "awareness"],
+      "match": ["Junior Engineer", "\\bJE\\b"], "sources": ["rrb"]
+    },
+    {
+      "slug": "upsc-cse", "name": "UPSC Civil Services", "full": "Civil Services Examination (IAS, IPS, IFS and others)", "category": "upsc",
+      "body": "Union Public Service Commission", "officialUrl": "https://upsc.gov.in/",
+      "papersUrl": "https://upsc.gov.in/examinations/previous-question-papers",
+      "about": "Recruitment to the All India Services and Central Civil Services.",
+      "stages": ["Preliminary (GS + CSAT)", "Mains (written)", "Personality test"],
+      "subjects": ["awareness", "quant", "reasoning"],
+      "match": ["Civil Services", "\\bCSE\\b", "\\bIAS\\b"], "sources": ["upsc"]
+    },
+    {
+      "slug": "upsc-cds", "name": "UPSC CDS", "full": "Combined Defence Services Examination", "category": "upsc",
+      "body": "Union Public Service Commission", "officialUrl": "https://upsc.gov.in/",
+      "papersUrl": "https://upsc.gov.in/examinations/previous-question-papers",
+      "about": "Entry into the Indian Military Academy, Naval Academy, Air Force Academy and Officers' Training Academy.",
+      "stages": ["Written exam", "SSB interview"],
+      "subjects": ["english", "awareness", "quant"],
+      "match": ["Combined Defence", "\\bCDS\\b"], "sources": ["upsc"]
+    },
+    {
+      "slug": "upsc-nda", "name": "UPSC NDA & NA", "full": "National Defence Academy and Naval Academy Examination", "category": "upsc",
+      "body": "Union Public Service Commission", "officialUrl": "https://upsc.gov.in/",
+      "papersUrl": "https://upsc.gov.in/examinations/previous-question-papers",
+      "about": "Entry of 12th-level candidates into the Army, Navy and Air Force wings of the NDA and the Naval Academy.",
+      "stages": ["Written exam (Mathematics + General Ability Test)", "SSB interview"],
+      "subjects": ["quant", "english", "awareness"],
+      "match": ["National Defence Academy", "\\bNDA\\b"], "sources": ["upsc"]
+    },
+    {
+      "slug": "upsc-capf", "name": "UPSC CAPF (AC)", "full": "Central Armed Police Forces (Assistant Commandants)", "category": "upsc",
+      "body": "Union Public Service Commission", "officialUrl": "https://upsc.gov.in/",
+      "papersUrl": "https://upsc.gov.in/examinations/previous-question-papers",
+      "about": "Recruitment of Assistant Commandants in BSF, CRPF, CISF, ITBP and SSB.",
+      "stages": ["Written exam", "Physical & medical standards", "Interview"],
+      "subjects": ["awareness", "reasoning", "english"],
+      "match": ["\\bCAPF\\b", "Assistant Commandant"], "sources": ["upsc"]
+    },
+    {
+      "slug": "upsc-ese", "name": "UPSC ESE", "full": "Engineering Services Examination", "category": "upsc",
+      "body": "Union Public Service Commission", "officialUrl": "https://upsc.gov.in/",
+      "papersUrl": "https://upsc.gov.in/examinations/previous-question-papers",
+      "about": "Recruitment of engineers to Group A services in civil, mechanical, electrical and electronics streams.",
+      "stages": ["Preliminary", "Mains", "Personality test"],
+      "subjects": ["awareness", "reasoning"],
+      "match": ["Engineering Services", "\\bESE\\b", "\\bIES\\b"], "sources": ["upsc"]
+    },
+    {
+      "slug": "ctet", "name": "CTET", "full": "Central Teacher Eligibility Test", "category": "teaching",
+      "body": "Central Board of Secondary Education", "officialUrl": "https://ctet.nic.in/",
+      "about": "Eligibility test for teachers of classes I–VIII in central government schools.",
+      "stages": ["Paper I (classes I–V)", "Paper II (classes VI–VIII)"],
+      "subjects": ["english", "awareness", "quant"],
+      "match": ["\\bCTET\\b", "Teacher Eligibility"], "sources": ["ctet"]
+    },
+    {
+      "slug": "ugc-net", "name": "UGC NET", "full": "UGC National Eligibility Test", "category": "teaching",
+      "body": "National Testing Agency", "officialUrl": "https://ugcnet.nta.ac.in/",
+      "about": "Eligibility for Assistant Professor, Junior Research Fellowship and PhD admission.",
+      "stages": ["Paper 1 (teaching & research aptitude)", "Paper 2 (subject)"],
+      "subjects": ["reasoning", "awareness"],
+      "match": ["UGC[- ]?NET", "UGC-NET"], "sources": ["nta", "ugcnet"]
+    },
+    {
+      "slug": "csir-net", "name": "CSIR NET", "full": "Joint CSIR-UGC NET", "category": "teaching",
+      "body": "National Testing Agency", "officialUrl": "https://csirnet.nta.ac.in/",
+      "about": "Eligibility for JRF and Assistant Professor in science subjects.",
+      "stages": ["Single paper (Parts A, B, C)"],
+      "subjects": ["reasoning", "quant"],
+      "match": ["CSIR"], "sources": ["nta"]
+    },
+    {
+      "slug": "jee-main", "name": "JEE Main", "full": "Joint Entrance Examination (Main)", "category": "entrance",
+      "body": "National Testing Agency", "officialUrl": "https://jeemain.nta.nic.in/",
+      "about": "Admission to NITs, IIITs and other centrally funded technical institutes; qualifier for JEE Advanced.",
+      "stages": ["Session 1", "Session 2"],
+      "subjects": ["quant"],
+      "match": ["JEE[- ]?\\(?Main", "JEE Main"], "sources": ["nta", "jeemain"]
+    },
+    {
+      "slug": "neet-ug", "name": "NEET UG", "full": "National Eligibility cum Entrance Test (UG)", "category": "entrance",
+      "body": "National Testing Agency", "officialUrl": "https://neet.nta.nic.in/",
+      "about": "Admission to MBBS, BDS, AYUSH and other undergraduate medical courses.",
+      "stages": ["Single pen-and-paper test (Physics, Chemistry, Biology)"],
+      "subjects": ["awareness"],
+      "match": ["NEET[- ]?\\(?UG", "NEET"], "sources": ["nta", "neet"]
+    },
+    {
+      "slug": "cuet-ug", "name": "CUET UG", "full": "Common University Entrance Test (UG)", "category": "entrance",
+      "body": "National Testing Agency", "officialUrl": "https://cuet.nta.nic.in/",
+      "about": "Admission to undergraduate programmes in central and participating universities.",
+      "stages": ["Languages", "Domain subjects", "General test"],
+      "subjects": ["english", "quant", "reasoning", "awareness"],
+      "match": ["CUET[- ]?\\(?UG", "CUET UG"], "sources": ["nta", "cuet"]
+    },
+    {
+      "slug": "cuet-pg", "name": "CUET PG", "full": "Common University Entrance Test (PG)", "category": "entrance",
+      "body": "National Testing Agency", "officialUrl": "https://exams.nta.ac.in/CUET-PG/",
+      "about": "Admission to postgraduate programmes in central and participating universities.",
+      "stages": ["Single computer based test (subject papers)"],
+      "subjects": ["english", "reasoning", "awareness"],
+      "match": ["CUET[- ]?\\(?PG", "CUET PG"], "sources": ["nta"]
+    },
+    {
+      "slug": "cat", "name": "CAT", "full": "Common Admission Test", "category": "entrance",
+      "body": "Indian Institutes of Management", "officialUrl": "https://iimcat.ac.in/",
+      "about": "Admission to postgraduate management programmes at the IIMs and many other B-schools.",
+      "stages": ["VARC", "DILR", "Quantitative Ability"],
+      "subjects": ["quant", "reasoning", "english"],
+      "match": ["\\bCAT\\b", "Common Admission Test"], "sources": ["cat"]
+    }
+  ]
+}

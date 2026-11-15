@@ -1,0 +1,266 @@
+{
+  "subject": "awareness",
+  "name": "General Awareness",
+  "questions": [
+    {
+      "id": "awareness-001",
+      "topic": "Indian Polity",
+      "q": "The Constitution of India came into force on:",
+      "options": [
+        "15 August 1947",
+        "26 November 1949",
+        "26 January 1950",
+        "2 October 1950"
+      ],
+      "answer": 2,
+      "explanation": "It was adopted on 26 November 1949 and came into force on 26 January 1950, now celebrated as Republic Day."
+    },
+    {
+      "id": "awareness-002",
+      "topic": "Indian Polity",
+      "q": "How many Fundamental Duties are listed in Article 51A of the Constitution?",
+      "options": [
+        "10",
+        "11",
+        "12",
+        "9"
+      ],
+      "answer": 1,
+      "explanation": "The 42nd Amendment (1976) added 10 duties and the 86th Amendment (2002) added an 11th."
+    },
+    {
+      "id": "awareness-003",
+      "topic": "Geography",
+      "q": "Which is the longest river flowing within India?",
+      "options": [
+        "Godavari",
+        "Yamuna",
+        "Ganga",
+        "Brahmaputra"
+      ],
+      "answer": 2,
+      "explanation": "The Ganga is the longest river in India. The Godavari is the longest river in peninsular India."
+    },
+    {
+      "id": "awareness-004",
+      "topic": "Banking",
+      "q": "Where is the central office of the Reserve Bank of India?",
+      "options": [
+        "New Delhi",
+        "Kolkata",
+        "Mumbai",
+        "Chennai"
+      ],
+      "answer": 2,
+      "explanation": "The RBI's central office has been in Mumbai since 1937."
+    },
+    {
+      "id": "awareness-005",
+      "topic": "Indian Polity",
+      "q": "Article 21 of the Constitution deals with:",
+      "options": [
+        "Right to equality",
+        "Protection of life and personal liberty",
+        "Freedom of religion",
+        "Right to education"
+      ],
+      "answer": 1,
+      "explanation": "Article 21: no person shall be deprived of life or personal liberty except according to procedure established by law."
+    },
+    {
+      "id": "awareness-006",
+      "topic": "Science",
+      "q": "Which is the largest planet in the Solar System?",
+      "options": [
+        "Saturn",
+        "Jupiter",
+        "Neptune",
+        "Earth"
+      ],
+      "answer": 1,
+      "explanation": "Jupiter is the largest planet. Its mass is more than twice that of all other planets combined."
+    },
+    {
+      "id": "awareness-007",
+      "topic": "Science",
+      "q": "What is the chemical formula of common salt?",
+      "options": [
+        "KCl",
+        "NaCl",
+        "NaOH",
+        "CaCl₂"
+      ],
+      "answer": 1,
+      "explanation": "Common salt is sodium chloride, NaCl."
+    },
+    {
+      "id": "awareness-008",
+      "topic": "Indian Polity",
+      "q": "Who appoints the Governor of a state?",
+      "options": [
+        "Chief Minister",
+        "Prime Minister",
+        "President",
+        "Chief Justice of India"
+      ],
+      "answer": 2,
+      "explanation": "Under Article 155, the Governor is appointed by the President."
+    },
+    {
+      "id": "awareness-009",
+      "topic": "Biology",
+      "q": "Deficiency of which vitamin causes scurvy?",
+      "options": [
+        "Vitamin A",
+        "Vitamin B12",
+        "Vitamin C",
+        "Vitamin D"
+      ],
+      "answer": 2,
+      "explanation": "Scurvy is caused by a lack of vitamin C (ascorbic acid)."
+    },
+    {
+      "id": "awareness-010",
+      "topic": "Geography",
+      "q": "The Tropic of Cancer does NOT pass through which of these states?",
+      "options": [
+        "Rajasthan",
+        "Gujarat",
+        "Odisha",
+        "Jharkhand"
+      ],
+      "answer": 2,
+      "explanation": "It passes through Gujarat, Rajasthan, Madhya Pradesh, Chhattisgarh, Jharkhand, West Bengal, Tripura and Mizoram, but not Odisha."
+    },
+    {
+      "id": "awareness-011",
+      "topic": "Physics",
+      "q": "What is the SI unit of force?",
+      "options": [
+        "Joule",
+        "Watt",
+        "Newton",
+        "Pascal"
+      ],
+      "answer": 2,
+      "explanation": "Force is measured in newtons (N). 1 N = 1 kg·m/s²."
+    },
+    {
+      "id": "awareness-012",
+      "topic": "Banking",
+      "q": "The repo rate is the rate at which:",
+      "options": [
+        "Banks lend to customers",
+        "RBI lends to commercial banks",
+        "Banks borrow from the public",
+        "The government borrows from RBI"
+      ],
+      "answer": 1,
+      "explanation": "Repo rate is the rate at which the RBI lends short-term funds to commercial banks against government securities."
+    },
+    {
+      "id": "awareness-013",
+      "topic": "Indian Polity",
+      "q": "Who presides over a joint sitting of the two Houses of Parliament?",
+      "options": [
+        "President",
+        "Vice-President",
+        "Speaker of the Lok Sabha",
+        "Prime Minister"
+      ],
+      "answer": 2,
+      "explanation": "Under Article 108, the Speaker of the Lok Sabha presides over a joint sitting."
+    },
+    {
+      "id": "awareness-014",
+      "topic": "Indian Polity",
+      "q": "What is the minimum age to be elected President of India?",
+      "options": [
+        "25 years",
+        "30 years",
+        "35 years",
+        "40 years"
+      ],
+      "answer": 2,
+      "explanation": "Article 58 requires a presidential candidate to be at least 35 years old."
+    },
+    {
+      "id": "awareness-015",
+      "topic": "Geography",
+      "q": "Which is the largest Indian state by area?",
+      "options": [
+        "Madhya Pradesh",
+        "Maharashtra",
+        "Rajasthan",
+        "Uttar Pradesh"
+      ],
+      "answer": 2,
+      "explanation": "Rajasthan is the largest state by area, about 3.42 lakh km²."
+    },
+    {
+      "id": "awareness-016",
+      "topic": "Science",
+      "q": "Which gas makes up most of the Earth's atmosphere?",
+      "options": [
+        "Oxygen",
+        "Nitrogen",
+        "Carbon dioxide",
+        "Argon"
+      ],
+      "answer": 1,
+      "explanation": "Nitrogen is about 78% of the atmosphere and oxygen about 21%."
+    },
+    {
+      "id": "awareness-017",
+      "topic": "History",
+      "q": "The Battle of Plassey was fought in:",
+      "options": [
+        "1757",
+        "1764",
+        "1857",
+        "1761"
+      ],
+      "answer": 0,
+      "explanation": "Robert Clive defeated Siraj-ud-Daulah at Plassey in 1757."
+    },
+    {
+      "id": "awareness-018",
+      "topic": "Geography",
+      "q": "Kaziranga National Park, known for the one-horned rhinoceros, is in:",
+      "options": [
+        "West Bengal",
+        "Assam",
+        "Arunachal Pradesh",
+        "Meghalaya"
+      ],
+      "answer": 1,
+      "explanation": "Kaziranga is in Assam and is a UNESCO World Heritage Site."
+    },
+    {
+      "id": "awareness-019",
+      "topic": "Banking",
+      "q": "What does NABARD stand for?",
+      "options": [
+        "National Bank for Agriculture and Rural Development",
+        "National Board for Agricultural Research and Development",
+        "National Bank for Agro and Rural Deposits",
+        "National Bureau of Agriculture and Rural Development"
+      ],
+      "answer": 0,
+      "explanation": "NABARD (National Bank for Agriculture and Rural Development) was set up in 1982 as the apex body for rural credit."
+    },
+    {
+      "id": "awareness-020",
+      "topic": "Economy",
+      "q": "What is the currency of Japan?",
+      "options": [
+        "Yuan",
+        "Won",
+        "Yen",
+        "Ringgit"
+      ],
+      "answer": 2,
+      "explanation": "Japan's currency is the yen. The yuan is China's and the won is South Korea's."
+    }
+  ]
+}

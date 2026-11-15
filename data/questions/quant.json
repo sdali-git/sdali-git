@@ -1,0 +1,266 @@
+{
+  "subject": "quant",
+  "name": "Quantitative Aptitude",
+  "questions": [
+    {
+      "id": "quant-001",
+      "topic": "Profit & Loss",
+      "q": "An article is marked 25% above its cost price and sold at a 10% discount. What is the profit percentage?",
+      "options": [
+        "10%",
+        "12.5%",
+        "13.5%",
+        "15%"
+      ],
+      "answer": 1,
+      "explanation": "Let CP = 100. Marked price = 125. Selling price = 125 × 0.9 = 112.5. Profit = 12.5 on 100, i.e. 12.5%."
+    },
+    {
+      "id": "quant-002",
+      "topic": "Simple Interest",
+      "q": "What is the simple interest on ₹8,000 at 6% per annum for 3 years?",
+      "options": [
+        "₹1,240",
+        "₹1,440",
+        "₹1,520",
+        "₹1,600"
+      ],
+      "answer": 1,
+      "explanation": "SI = P × R × T / 100 = 8000 × 6 × 3 / 100 = ₹1,440."
+    },
+    {
+      "id": "quant-003",
+      "topic": "Compound Interest",
+      "q": "What is the compound interest on ₹10,000 at 10% per annum for 2 years, compounded annually?",
+      "options": [
+        "₹2,000",
+        "₹2,050",
+        "₹2,100",
+        "₹2,210"
+      ],
+      "answer": 2,
+      "explanation": "Amount = 10000 × 1.1² = ₹12,100. CI = 12,100 − 10,000 = ₹2,100."
+    },
+    {
+      "id": "quant-004",
+      "topic": "Speed, Time & Distance",
+      "q": "A 240 m long train passes a pole in 12 seconds. What is its speed in km/h?",
+      "options": [
+        "60 km/h",
+        "66 km/h",
+        "72 km/h",
+        "80 km/h"
+      ],
+      "answer": 2,
+      "explanation": "Speed = 240 / 12 = 20 m/s. 20 × 18/5 = 72 km/h."
+    },
+    {
+      "id": "quant-005",
+      "topic": "Time & Work",
+      "q": "A can finish a job in 12 days and B in 18 days. How long will they take working together?",
+      "options": [
+        "6 days",
+        "7.2 days",
+        "7.5 days",
+        "8 days"
+      ],
+      "answer": 1,
+      "explanation": "Combined rate = 1/12 + 1/18 = 3/36 + 2/36 = 5/36 of the job per day. Time = 36/5 = 7.2 days."
+    },
+    {
+      "id": "quant-006",
+      "topic": "Averages",
+      "q": "What is the average of the first 10 natural numbers?",
+      "options": [
+        "5",
+        "5.5",
+        "6",
+        "10"
+      ],
+      "answer": 1,
+      "explanation": "Sum = 10 × 11 / 2 = 55. Average = 55 / 10 = 5.5."
+    },
+    {
+      "id": "quant-007",
+      "topic": "Ratio & Proportion",
+      "q": "Two numbers are in the ratio 3 : 5 and their sum is 64. What is the larger number?",
+      "options": [
+        "24",
+        "36",
+        "40",
+        "45"
+      ],
+      "answer": 2,
+      "explanation": "3x + 5x = 64 → x = 8. Larger number = 5 × 8 = 40."
+    },
+    {
+      "id": "quant-008",
+      "topic": "Percentage",
+      "q": "What is 15% of 240 plus 20% of 150?",
+      "options": [
+        "56",
+        "60",
+        "66",
+        "72"
+      ],
+      "answer": 2,
+      "explanation": "15% of 240 = 36 and 20% of 150 = 30. Total = 66."
+    },
+    {
+      "id": "quant-009",
+      "topic": "Percentage",
+      "q": "The price of sugar rises by 20%. By what percentage must a family cut consumption to keep spending unchanged?",
+      "options": [
+        "15%",
+        "16⅔%",
+        "20%",
+        "25%"
+      ],
+      "answer": 1,
+      "explanation": "Reduction = increase / (100 + increase) × 100 = 20/120 × 100 = 16⅔%."
+    },
+    {
+      "id": "quant-010",
+      "topic": "LCM & HCF",
+      "q": "What is the LCM of 12, 18 and 30?",
+      "options": [
+        "90",
+        "120",
+        "180",
+        "360"
+      ],
+      "answer": 2,
+      "explanation": "12 = 2²·3, 18 = 2·3², 30 = 2·3·5. LCM = 2²·3²·5 = 180."
+    },
+    {
+      "id": "quant-011",
+      "topic": "LCM & HCF",
+      "q": "What is the HCF of 84 and 126?",
+      "options": [
+        "14",
+        "21",
+        "28",
+        "42"
+      ],
+      "answer": 3,
+      "explanation": "84 = 2²·3·7 and 126 = 2·3²·7. Common factors: 2·3·7 = 42."
+    },
+    {
+      "id": "quant-012",
+      "topic": "Boats & Streams",
+      "q": "A boat's speed in still water is 10 km/h and the stream flows at 2 km/h. How long does it take to go 36 km downstream?",
+      "options": [
+        "2.5 hours",
+        "3 hours",
+        "3.5 hours",
+        "4.5 hours"
+      ],
+      "answer": 1,
+      "explanation": "Downstream speed = 10 + 2 = 12 km/h. Time = 36 / 12 = 3 hours."
+    },
+    {
+      "id": "quant-013",
+      "topic": "Pipes & Cisterns",
+      "q": "Pipe A fills a tank in 6 hours and pipe B empties it in 9 hours. If both are opened together, when is the empty tank full?",
+      "options": [
+        "12 hours",
+        "15 hours",
+        "18 hours",
+        "20 hours"
+      ],
+      "answer": 2,
+      "explanation": "Net rate = 1/6 − 1/9 = 3/18 − 2/18 = 1/18 per hour, so 18 hours."
+    },
+    {
+      "id": "quant-014",
+      "topic": "Simplification",
+      "q": "What is the value of (0.2)² + (0.3)²?",
+      "options": [
+        "0.13",
+        "0.25",
+        "0.5",
+        "1.3"
+      ],
+      "answer": 0,
+      "explanation": "0.04 + 0.09 = 0.13."
+    },
+    {
+      "id": "quant-015",
+      "topic": "Mensuration",
+      "q": "What is the area of a circle of radius 7 cm? (Take π = 22/7)",
+      "options": [
+        "44 cm²",
+        "144 cm²",
+        "154 cm²",
+        "176 cm²"
+      ],
+      "answer": 2,
+      "explanation": "Area = πr² = 22/7 × 49 = 154 cm²."
+    },
+    {
+      "id": "quant-016",
+      "topic": "LCM & HCF",
+      "q": "The product of two numbers is 360 and their HCF is 6. What is their LCM?",
+      "options": [
+        "36",
+        "54",
+        "60",
+        "72"
+      ],
+      "answer": 2,
+      "explanation": "Product = HCF × LCM, so LCM = 360 / 6 = 60."
+    },
+    {
+      "id": "quant-017",
+      "topic": "Algebra",
+      "q": "If x + 1/x = 4, what is x² + 1/x²?",
+      "options": [
+        "12",
+        "14",
+        "16",
+        "18"
+      ],
+      "answer": 1,
+      "explanation": "(x + 1/x)² = x² + 2 + 1/x². So x² + 1/x² = 16 − 2 = 14."
+    },
+    {
+      "id": "quant-018",
+      "topic": "Discount",
+      "q": "Successive discounts of 20% and 10% are equal to a single discount of:",
+      "options": [
+        "28%",
+        "30%",
+        "25%",
+        "32%"
+      ],
+      "answer": 0,
+      "explanation": "Price after both = 100 × 0.8 × 0.9 = 72. Single discount = 28%."
+    },
+    {
+      "id": "quant-019",
+      "topic": "Ages",
+      "q": "The ages of A and B are in the ratio 4 : 5. After 6 years the ratio will be 5 : 6. What is A's present age?",
+      "options": [
+        "20 years",
+        "24 years",
+        "28 years",
+        "30 years"
+      ],
+      "answer": 1,
+      "explanation": "(4x + 6)/(5x + 6) = 5/6 → 24x + 36 = 25x + 30 → x = 6. A = 4 × 6 = 24 years."
+    },
+    {
+      "id": "quant-020",
+      "topic": "Speed, Time & Distance",
+      "q": "A car travels at 60 km/h for 2 hours and then at 40 km/h for 3 hours. What is its average speed?",
+      "options": [
+        "45 km/h",
+        "48 km/h",
+        "50 km/h",
+        "52 km/h"
+      ],
+      "answer": 1,
+      "explanation": "Total distance = 120 + 120 = 240 km. Total time = 5 h. Average = 240 / 5 = 48 km/h."
+    }
+  ]
+}
