@@ -42,11 +42,13 @@ function layout({ title, description, body, path: pagePath, active = '' }) {
   const fullTitle = title ? `${title} | ${config.name}` : `${config.name} | ${config.tagline}`;
   const t = config.theme || {};
   const nav = [
-    ['latest', 'Latest Updates'],
+    ['latest', 'Latest'],
     ['exams', 'Exams'],
     ['papers', 'Papers & Keys'],
     ['practice', 'Practice'],
-    ['mock', 'Mock Tests']
+    ['mock', 'Mock Tests'],
+    ['my-exams', 'My Exams'],
+    ['progress', 'Progress']
   ];
   return `<!doctype html>
 <html lang="en">
@@ -76,8 +78,8 @@ ${SITE ? `<link rel="canonical" href="${esc(SITE + u(pagePath))}">` : ''}
     <button class="icon-btn menu-btn" aria-label="Menu" aria-expanded="false" data-menu>☰</button>
     <nav class="main-nav" data-nav>
       ${nav.map(([p, l]) => `<a href="${u(p + '/')}"${active === p ? ' aria-current="page"' : ''}>${l}</a>`).join('')}
-      <a href="${u('progress/')}"${active === 'progress' ? ' aria-current="page"' : ''}>My Progress</a>
     </nav>
+    <a class="icon-btn bell${active === 'notifications' ? ' active' : ''}" href="${u('notifications/')}" aria-label="Notifications" title="Notifications" data-bell><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 22a2.5 2.5 0 0 0 2.45-2h-4.9A2.5 2.5 0 0 0 12 22Zm7-6V11a7 7 0 0 0-5.5-6.84V3.5a1.5 1.5 0 0 0-3 0v.66A7 7 0 0 0 5 11v5l-2 2v1h18v-1Z"/></svg><span class="bell-count" data-bell-count hidden></span></a>
     <button class="icon-btn" aria-label="Toggle dark mode" data-theme-toggle>◐</button>
   </div>
 </header>
@@ -97,6 +99,7 @@ ${body}
   </div>
   <div class="wrap muted small footer-bottom">© ${new Date().getFullYear()} ${esc(config.name)}. Not affiliated with any government body or exam conducting authority. Always confirm details on the official website.</div>
 </footer>
+<script src="${u('assets/notify-core.js')}" defer></script>
 <script src="${u('assets/app.js')}" defer></script>
 </body>
 </html>`;
@@ -152,6 +155,7 @@ page('', {
     ${['notification', 'admit-card', 'result', 'answer-key', 'schedule', 'syllabus'].map((t) => `<a class="type-tile" href="${u(`latest/?type=${t}`)}">${badge(t)}<strong>${typeCounts[t] || 0}</strong></a>`).join('')}
   </div>
 </section>
+<section class="wrap section"><div data-home-alerts></div></section>
 <section class="wrap section two-col">
   <div>
     <div class="section-head"><h2>Latest updates</h2><a href="${u('latest/')}">View all →</a></div>
@@ -243,6 +247,7 @@ for (const e of exams) {
   <div class="exam-head">
     <div><h1>${esc(e.name)}</h1><p class="lead">${esc(e.full)}</p><p>${esc(e.about)}</p></div>
     <div class="exam-actions">
+      <button class="btn btn-primary" data-follow="${esc(e.slug)}" data-name="${esc(e.name)}">🔔 Get ${esc(e.name)} alerts</button>
       <a class="btn" href="${u(`mock/?exam=${e.slug}`)}">Take free mock test</a>
       <a class="btn btn-ghost" href="${esc(e.officialUrl)}" target="_blank" rel="noopener">Official website ↗</a>
     </div>
@@ -325,6 +330,32 @@ page('mock/', {
 });
 
 // ---------- Progress, search, static pages ----------
+// ---------- Exam alerts: settings & notifications ----------
+const alertCatalog = esc(JSON.stringify({
+  categories: categories.map((c) => ({ slug: c.slug, name: c.name, icon: c.icon })),
+  exams: exams.map((e) => ({ slug: e.slug, name: e.name, full: e.full, category: e.category })),
+  types: TYPE_LABELS
+}));
+page('my-exams/', {
+  title: 'My Exams & Alert Settings',
+  description: 'Choose the exams and update types you want alerts for.',
+  active: 'my-exams',
+  body: `<section class="wrap section narrow">
+  <h1>My exams & alert settings</h1>
+  <p class="muted">Tick the exams you're preparing for and the kinds of updates you want. Matching updates appear under <a href="${u('notifications/')}">Notifications</a>. You can change this any time.</p>
+  <div data-alert-settings data-catalog="${alertCatalog}"><p class="muted">Loading…</p></div>
+</section>`
+});
+page('notifications/', {
+  title: 'Notifications',
+  description: 'Latest updates for the exams you follow.',
+  active: 'notifications',
+  body: `<section class="wrap section narrow">
+  <div class="section-head"><h1>Notifications</h1><a href="${u('my-exams/')}">⚙ Manage my exams</a></div>
+  <div data-notifications data-catalog="${alertCatalog}"><p class="muted">Loading…</p></div>
+</section>`
+});
+
 page('progress/', {
   title: 'My Progress',
   active: 'progress',
