@@ -8,16 +8,17 @@ import { fileURLToPath } from 'node:url';
 import { TYPE_LABELS } from './lib/classify.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const DIST = path.join(ROOT, 'dist');
+const DIST = path.resolve(ROOT, process.env.OUT_DIR || 'dist');
+const LIVE = process.env.LIVE_DATA_DIR || 'data';
 const read = async (p, fb) => {
-  try { return JSON.parse(await fs.readFile(path.join(ROOT, p), 'utf8')); } catch { return fb; }
+  try { return JSON.parse(await fs.readFile(path.resolve(ROOT, p), 'utf8')); } catch { return fb; }
 };
 
 const config = await read('site.config.json', {});
 const { categories, exams } = await read('data/exams.json', { categories: [], exams: [] });
 const { sources } = await read('data/sources.json', { sources: [] });
-const updates = await read('data/updates.json', { items: [] });
-const status = await read('data/status.json', { sources: {} });
+const updates = await read(`${LIVE}/updates.json`, { items: [] });
+const status = await read(`${LIVE}/status.json`, { sources: {} });
 const subjectFiles = (await fs.readdir(path.join(ROOT, 'data/questions'))).filter((f) => f.endsWith('.json'));
 const subjects = await Promise.all(subjectFiles.map((f) => read(`data/questions/${f}`)));
 const subjectBySlug = Object.fromEntries(subjects.map((s) => [s.subject, s]));
@@ -427,4 +428,4 @@ if (SITE) {
   const urls = pages.filter((p) => !p.path.endsWith('.html') && p.path !== 'search/' && p.path !== 'progress/').map((p) => `<url><loc>${SITE}${u(p.path)}</loc></url>`).join('');
   await fs.writeFile(path.join(DIST, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls}</urlset>`);
 }
-console.log(`Built ${pages.length} pages into dist/ (base ${BASE})`);
+console.log(`Built ${pages.length} pages into ${path.relative(ROOT, DIST) || DIST} (base ${BASE})`);

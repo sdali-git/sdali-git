@@ -1,13 +1,13 @@
 name: Update exams & deploy site
 
+# Optional: publishes to GitHub Pages instead of the EC2 server.
+# The live site runs on EC2 (see deploy/DEPLOY.md), which has its own
+# Mon/Wed/Fri 1:00 AM IST timer, so this workflow only runs when started by hand.
+# To make it scheduled again, add:
+#   schedule:
+#     - cron: '30 19 * * 0,2,4'   # 19:30 UTC Sun/Tue/Thu = 1:00 AM IST Mon/Wed/Fri
 on:
-  schedule:
-    # GitHub cron runs in UTC. 19:30 UTC Sun/Tue/Thu = 1:00 AM IST Mon/Wed/Fri.
-    - cron: '30 19 * * 0,2,4'
   workflow_dispatch: {}
-  push:
-    branches: [main]
-    paths-ignore: ['**.md']
 
 permissions:
   contents: write

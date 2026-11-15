@@ -23,9 +23,9 @@ Settings are saved on the user's device (localStorage, mirrored to IndexedDB for
 
 ## How auto-update works
 
-1. `.github/workflows/update-and-deploy.yml` runs on cron `30 19 * * 0,2,4` (UTC), which is 1:00 AM IST on Mon/Wed/Fri. You can also start it manually from the **Actions** tab.
+1. On the server, the `exam-aim-update.timer` systemd timer runs `deploy/refresh.sh` every Mon/Wed/Fri at 1:00 AM IST.
 2. `scripts/update.mjs` reads every site in `data/sources.json`. Pages that only render with JavaScript (SSC, SBI, RBI, CAT) are opened in headless Chromium. It respects `robots.txt`, keeps only exam-related links, labels each one by type and exam, picks out the date, removes duplicates and merges into `data/updates.json`. If one source fails, its earlier items are kept.
-3. The data is committed back to the repo, `scripts/build.mjs` regenerates the static site, and it is deployed to GitHub Pages.
+3. `scripts/build.mjs` builds the site into a new release folder, and the live site switches over to it in a single step. Collected data is kept in `/opt/exam-aim/live-data`, outside the git checkout.
 
 ### Add or fix a source
 Add an entry to `data/sources.json` (`mode`: `html`, `browser` or `rss`), then add its `id` to the `sources` list of the matching exams in `data/exams.json`. For sites whose notices aren't links, add `rows` selectors (see the SSC entry).
@@ -42,15 +42,11 @@ npm run build    # writes dist/
 npm run serve    # http://localhost:8080
 ```
 
-## Go live (one-time)
+## Go live
 
-1. Merge into the repository's default branch (`main`). GitHub only runs scheduled workflows from the default branch.
-2. **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-3. **Settings → Actions → General → Workflow permissions → Read and write**.
-4. Run the workflow once from the **Actions** tab. After that it runs by itself.
-5. Optional: add a custom domain under Settings → Pages and set `baseUrl` in `site.config.json`.
+Production runs on the EC2 server at **https://exam-aim.orbit-group.online**. Follow [`deploy/DEPLOY.md`](deploy/DEPLOY.md). It installs into `/opt/exam-aim` only, adds a single nginx site and a systemd timer for Mon/Wed/Fri 1:00 AM IST, and doesn't touch other sites or services.
 
-GitHub may start scheduled runs a few minutes late during busy periods.
+`.github/workflows/update-and-deploy.yml` is an optional manual alternative that deploys to GitHub Pages.
 
 ## Content policy
 

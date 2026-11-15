@@ -17,12 +17,12 @@ import { isRelevant, EXCLUDE, classifyType, extractDate, dateFromUrl, matchExams
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const readJson = async (p, fallback) => {
   try {
-    return JSON.parse(await fs.readFile(path.join(ROOT, p), 'utf8'));
+    return JSON.parse(await fs.readFile(path.resolve(ROOT, p), 'utf8'));
   } catch {
     return fallback;
   }
 };
-const writeJson = (p, data) => fs.writeFile(path.join(ROOT, p), JSON.stringify(data, null, 2) + '\n');
+const writeJson = (p, data) => fs.writeFile(path.resolve(ROOT, p), JSON.stringify(data, null, 2) + '\n');
 
 const args = Object.fromEntries(
   process.argv.slice(2).map((a) => {
@@ -31,10 +31,12 @@ const args = Object.fromEntries(
   })
 );
 
+// LIVE_DATA_DIR lets a server keep collected updates outside the git checkout.
+const LIVE = process.env.LIVE_DATA_DIR || 'data';
 const config = await readJson('site.config.json', {});
 const { exams } = await readJson('data/exams.json', { exams: [] });
 const { sources } = await readJson('data/sources.json', { sources: [] });
-const existing = await readJson('data/updates.json', { items: [] });
+const existing = await readJson(`${LIVE}/updates.json`, { items: [] });
 const examBySlug = Object.fromEntries(exams.map((e) => [e.slug, e]));
 
 const only = args.only ? String(args.only).split(',') : null;
@@ -123,9 +125,9 @@ console.log(`\n${ok}/${todo.length} sources OK · ${merged.length} items in arch
 if (args['dry-run']) {
   console.log('Dry run: nothing written.');
 } else {
-  await writeJson('data/updates.json', { generatedAt: now.toISOString(), items: merged });
-  const prevStatus = await readJson('data/status.json', { sources: {} });
-  await writeJson('data/status.json', { ...status, sources: { ...prevStatus.sources, ...status.sources } });
+  await writeJson(`${LIVE}/updates.json`, { generatedAt: now.toISOString(), items: merged });
+  const prevStatus = await readJson(`${LIVE}/status.json`, { sources: {} });
+  await writeJson(`${LIVE}/status.json`, { ...status, sources: { ...prevStatus.sources, ...status.sources } });
 }
 
 if (ok === 0 && todo.length > 0) process.exitCode = 1;
