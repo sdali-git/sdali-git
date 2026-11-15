@@ -13,9 +13,13 @@ An exam-preparation website. It shows the latest exam notifications, admit cards
 | Papers & keys | Answer keys and papers recently published by exam bodies, plus links to each body's official archive. |
 | Practice | Original questions with explanations in Quant, Reasoning, English and General Awareness, filterable by topic. |
 | Mock tests | Timed (45 s per question), +1 / −0.25 marking, question palette, score card and full solution review. |
+| Exam alerts | **My Exams** page: tick exams (or a whole category), choose update types, turn on device notifications. **Notifications** tab: matching updates with Unread / All, per-exam filter and mark as read. The header bell shows the unread count, and each exam page has a one-click *Get alerts* button. The installed app checks in the background (Periodic Background Sync, Chrome/Android). |
 | My progress | Attempt history, stored in the browser (no login or server needed). |
 | App | Installable PWA (manifest + service worker) that works on Android/iOS home screens. It can be wrapped for the Play Store with a Trusted Web Activity (e.g. Bubblewrap / PWABuilder). |
 | Status page | `/sources/` shows when each official source was last checked and whether the check succeeded. |
+
+### About alert settings
+Settings are saved on the user's device (localStorage, mirrored to IndexedDB for the service worker). No login is needed. To move them to another device, use the copy/paste *settings code* on the My Exams page. Server-side accounts, plus push notifications delivered while the app is closed on any browser, would need a backend such as Firebase or Supabase.
 
 ## How auto-update works
 
